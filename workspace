@@ -1,1 +1,43 @@
-<NotepadPlus />
+<NotepadPlus>
+    <Project name="complex">
+        <Folder name="client">
+            <Folder name="public">
+                <File name="client\public\favicon.ico" />
+                <File name="client\public\index.html" />
+                <File name="client\public\logo192.png" />
+                <File name="client\public\logo512.png" />
+                <File name="client\public\manifest.json" />
+                <File name="client\public\robots.txt" />
+            </Folder>
+            <Folder name="src">
+                <File name="client\src\App.css" />
+                <File name="client\src\App.js" />
+                <File name="client\src\App.test.js" />
+                <File name="client\src\Fib.js" />
+                <File name="client\src\index.css" />
+                <File name="client\src\index.js" />
+                <File name="client\src\logo.svg" />
+                <File name="client\src\OtherPage.js" />
+                <File name="client\src\serviceWorker.js" />
+                <File name="client\src\setupTests.js" />
+            </Folder>
+            <File name="client\.gitignore" />
+            <File name="client\package.json" />
+            <File name="client\README.md" />
+            <File name="client\Dockerfile.dev" />
+        </Folder>
+        <Folder name="server">
+            <File name="server\index.js" />
+            <File name="server\keys.js" />
+            <File name="server\package.json" />
+            <File name="server\Dockerfile.dev" />
+        </Folder>
+        <Folder name="worker">
+            <File name="worker\index.js" />
+            <File name="worker\keys.js" />
+            <File name="worker\package.json" />
+            <File name="worker\Dockerfile.dev" />
+        </Folder>
+        <File name="workspace" />
+    </Project>
+</NotepadPlus>
