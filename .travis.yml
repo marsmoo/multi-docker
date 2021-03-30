@@ -11,15 +11,15 @@ script:
   - docker run -e CI=true marsmoo/react-test npm test
   
 after_success:
-  - docker build -t marsmoo/multi-client ./client
-  - docker build -t marsmoo/multi-nginx ./nginx
-  - docker build -t marsmoo/multi-server ./server
-  - docker build -t marsmoo/multi-worker ./worker
+  - docker build -t docmarsmoo/multi-client ./client
+  - docker build -t docmarsmoo/multi-nginx ./nginx
+  - docker build -t docmarsmoo/multi-server ./server
+  - docker build -t docmarsmoo/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
-  - docker push marsmoo/multi-client
-  - docker push marsmoo/multi-nginx
-  - docker push marsmoo/multi-server
-  - docker push marsmoo/multi-worker
+  - docker push docmarsmoo/multi-client
+  - docker push docmarsmoo/multi-nginx
+  - docker push docmarsmoo/multi-server
+  - docker push docmarsmoo/multi-worker
   
