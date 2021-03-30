@@ -25,19 +25,32 @@
             <File name="client\package.json" />
             <File name="client\README.md" />
             <File name="client\Dockerfile.dev" />
+            <File name="client\Dockerfile" />
+            <Folder name="nginx">
+                <File name="client\nginx\default.conf" />
+            </Folder>
         </Folder>
         <Folder name="server">
             <File name="server\index.js" />
             <File name="server\keys.js" />
             <File name="server\package.json" />
             <File name="server\Dockerfile.dev" />
+            <File name="server\Dockerfile" />
         </Folder>
         <Folder name="worker">
             <File name="worker\index.js" />
             <File name="worker\keys.js" />
             <File name="worker\package.json" />
             <File name="worker\Dockerfile.dev" />
+            <File name="worker\Dockerfile" />
         </Folder>
         <File name="workspace" />
+        <File name="docker-compose.yml" />
+        <Folder name="nginx">
+            <File name="nginx\default.conf" />
+            <File name="nginx\Dockerfile.dev" />
+            <File name="nginx\Dockerfile" />
+        </Folder>
+        <File name=".travis.yml" />
     </Project>
 </NotepadPlus>
