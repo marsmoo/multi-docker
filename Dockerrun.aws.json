@@ -1,0 +1,36 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+	  "name": "client",
+	  "image": "docmarsmoo/multi-client",
+	  "hostname": "client",
+	  "essential": false
+	},
+	{
+	  "name": "server",
+	  "image": "docmarsmoo/multi-server",
+	  "hostname": "api",
+	  "essential": false
+	},
+	{
+	  "name": "worker",
+	  "image": "docmarsmoo/multi-worker",
+	  "hostname": "worker",
+	  "essential": false	
+	},
+	{
+	  "name": "nginx",
+	  "image": "docmarsmoo/multi-nginx",
+	  "hostname": "nginx",
+	  "essential": true,
+	  "portMappings": [
+		{
+		  "hostPort": 80,
+		  "containerPort": 80
+		}
+	  ],
+	  "links": ["client", "server"]
+	}
+  ]
+}
